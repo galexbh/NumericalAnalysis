@@ -1,4 +1,4 @@
-# función inicial
+# ecuación diferencial
 f = @(t,y) (200e-3*y-2e-6*y^2);
 
 a = input("ingrese el limite inferior, a: ");
@@ -12,8 +12,14 @@ h = (b-a)/N;
 t = a;
 # Aproximar la solución y
 w = init;
+# iteraciones
+i = 0;
+
+format longG
 
 for i = 1:N;
+  "---------------------"
+  fprintf('Iteracion n:%i\n',i++);
   k1 = h*f(t,w);
   k2 = h*f(t+h/2.0, w+k1/2.0);
   k3 = h*f(t+h/2.0, w+k2/2.0);
