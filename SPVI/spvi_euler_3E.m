@@ -23,8 +23,6 @@ f2 = @(t,u1,u2,u3) u3;
 # ecuación diferencial 3
 f3 = @(t,u1,u2,u3) -2*u3+u2+2*u1+exp(t);
 
-format longG
-
 for j = a:h:b-h
     "---------------------"
     fprintf('Iteracion n:%i\n',i++);

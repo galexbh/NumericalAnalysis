@@ -19,8 +19,6 @@ w = init;
 # iteraciones
 i = 0;
 
-format longG
-
 for i = 1:N;
   "---------------------"
   fprintf('Iteracion n:%i\n',i++);

@@ -19,8 +19,6 @@ f1 = @(t,u1,u2) u2;
 # ecuación diferencial 3
 f3 = @(t,u1,u2) u2/t-3*u2/(t^2)+4*u1/(t^3)+5*log(t)+9;
 
-format longG
-
 for j=a:h:b-h
     "---------------------"
     fprintf('Iteracion n:%i\n',i++);

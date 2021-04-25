@@ -15,8 +15,6 @@ i = 1;
 # ecuación diferencial
 f = @(t,y) (0.195)*cos(t)*y;
 
-format longG
-
 for j = a:h:b
   "-----------------------"
   fprintf('Iteracion n:%i\n',i++);

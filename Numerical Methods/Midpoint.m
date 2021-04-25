@@ -15,8 +15,6 @@ i = 1;
 # ecuación diferencial
 f = @(t,y) -5*y+5*t^2+2*t;
 
-format longG
-
 for j = a:h:b
   "-----------------------"
   fprintf('Iteracion n:%i\n',i++);

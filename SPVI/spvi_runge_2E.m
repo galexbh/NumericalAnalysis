@@ -19,8 +19,6 @@ f1 = @(t,u1,u2) u2;
 # ecuación diferencial 2
 f2 = @(t,u1,u2) (2/t)*u2-(2/t^2)*u1+t*log(t);
 
-format longG
-
 for j = a:h:b-h
     "---------------------"
     fprintf('Iteracion n:%i\n',i++);

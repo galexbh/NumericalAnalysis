@@ -15,8 +15,6 @@ i = 0;
 # ecuación diferencial
 f = @(t,y) (t+2*t^3)*y^3-t*y;
 
-format longG
-
 for j = a:h:b
   "-----------------------"
   fprintf('Iteracion n:%i\n',i++);
