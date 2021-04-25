@@ -1,15 +1,19 @@
+clear all     # borra variables
+clc           # limpia pantalla
+format longG  # Formato largo decimal
+
 # limite inferior
 a = 0;
 # limite superior
 b = 10;
 # valor inicial
-w = 1;
+w = 2100;
 #tamaño de paso
-h = 1;
+h = 5;
 # iteraciones
-i = 0;
+i = 1;
 # ecuación diferencial
-f = @(t,y) -y+t+1;
+f = @(t,y) (0.195)*cos(t)*y;
 
 format longG
 

@@ -1,3 +1,7 @@
+clear all     # borra variables
+clc           # limpia pantalla
+format longG  # Formato largo decimal
+
 # limite inferior
 a = 1;
 # limite superior

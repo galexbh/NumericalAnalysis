@@ -1,15 +1,19 @@
+clear all     # borra variables
+clc           # limpia pantalla
+format longG  # Formato largo decimal
+
 # limite inferior
 a = 0;
 # limite superior
-b = 2;
+b = 1;
 # valor inicial
-w = 0.3333;
+w = 1/3;
 # tamaño de paso
-h = 0.1;
+h = 0.10;
 # iteraciones
-i = 0;
+i = 1;
 # ecuación diferencial
-f = @(t,y) (t+2*t^3)*y^3-t*y;
+f = @(t,y) -5*y+5*t^2+2*t;
 
 format longG
 

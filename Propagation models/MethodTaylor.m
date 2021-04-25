@@ -1,3 +1,7 @@
+clear all     # borra variables
+clc           # limpia pantalla
+format longG  # Formato largo decimal
+
 # ecuación diferencial
 f = @(t,y) (200e-3*y-2e-6*y^2); 
 
