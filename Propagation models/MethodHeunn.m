@@ -17,11 +17,11 @@ t = a;
 # Aproximar la solución y
 w = init;
 # iteraciones
-i = 0;
+j = 0;
 
 for i = 1:N+1
   "---------------------"
-  fprintf('Iteracion n:%i\n',i++);
+  fprintf('Iteracion n:%i\n',j++);
   t(i+1) = t(i)+h
   w(i+1) = w(i)+(h/4)*(f(t(i),w(i))+3*f(t(i)+2*h/3,w(i)+(2*h/3)*f(t(i)+h/3,w(i)+(h/3)*f(t(i),w(i)))));
   fprintf('%.4f %.8f\n', t(i), w(i));  

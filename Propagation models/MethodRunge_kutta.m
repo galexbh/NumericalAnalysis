@@ -17,11 +17,11 @@ t = a;
 # Aproximar la solución y
 w = init;
 # iteraciones
-i = 0;
+j = 0;
 
 for i = 1:N;
   "---------------------"
-  fprintf('Iteracion n:%i\n',i++);
+  fprintf('Iteracion n:%i\n',j++);
   k1 = h*f(t,w);
   k2 = h*f(t+h/2.0, w+k1/2.0);
   k3 = h*f(t+h/2.0, w+k2/2.0);
